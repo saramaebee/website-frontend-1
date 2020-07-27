@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PageTemplate from "../components/templates/PageTemplate";
+import ErrorTemplate from "../components/templates/ErrorTemplate";
 import ShowcaseService from "../services/ShowcaseService";
 import IntroHero from "../components/molecules/IntroHero";
 import Card from "../components/molecules/Card";
@@ -35,7 +36,7 @@ class Community extends Component {
 		const { error, loaded, showcasePosts } = this.state;
 
 		if (error) {
-			// TODO return error template
+			return <ErrorTemplate/>;
 		}
 
 		if (loaded) {
