@@ -31,7 +31,7 @@ const Error = styled("div")`
 `;
 
 function ErrorTemplate({message, code}) {
-    return (
+	return (
 		<Error>
 			<main className="error-template">
 				<section className="error">
@@ -49,7 +49,7 @@ function ErrorTemplate({message, code}) {
 				</section>
 			</main>
 		</Error>
-    );
+	);
 }
 
 export default ErrorTemplate;
