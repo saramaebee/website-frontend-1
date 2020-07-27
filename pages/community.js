@@ -50,12 +50,12 @@ class Community extends Component {
 								Community Showcase
 							</h2>
 							<CardGroup>
-								{ showcasePosts.map((post) => (
+								{ showcasePosts.map(post =>
 									<Card
 										title = { post.title }
 										description = { post.description }
 									/>
-								))}
+								)}
 							</CardGroup>
 						</section>
 					</main>
@@ -63,7 +63,7 @@ class Community extends Component {
 			);
 		}
 
-		return <p>Loading...</p>
+		return <p>Loading...</p>;
 	}
 }
 
